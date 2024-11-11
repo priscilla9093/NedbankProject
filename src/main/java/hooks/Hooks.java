@@ -12,13 +12,13 @@ public class Hooks extends BaseClass {
     public  void openBrowser(){
         driver= new ChromeDriver();
         //driver.get("www.eqaroloflow.co.za/wp/ ");
-        driver.get("http://eqaroloflow.co.za/wp/ ");
+        driver.get("https://demowebshop.tricentis.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
     }
 
-    @After
+    //@After
     public void closeBrowser(){
         driver.close();
         driver.quit();
